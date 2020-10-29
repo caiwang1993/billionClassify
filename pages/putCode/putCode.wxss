@@ -1,0 +1,136 @@
+@import "../nearbyEquipment/nearbyEquipment.wxss";
+
+.xg-main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.codr_container {
+    height: 100%;
+    overflow: hidden;
+}
+
+.erwei_container {
+    overflow: hidden;
+    margin: 60rpx 80rpx;
+    padding-top: 60rpx;
+    background-color: #fff;
+    border-radius: 14rpx;
+    min-height: 40vh;
+    border: 1px solid #F1F2F3;
+    box-shadow: 5px 5px 5px rgb(187,193,199);
+}
+
+.img_erwei {
+    display: block;
+    text-align: center;
+    height: 500rpx;
+    width: 500rpx;
+    margin: 0 auto 40rpx;
+}
+
+.p_erweitips {
+    text-align: center;
+    margin: 10rpx auto 50rpx;
+    line-height: 60rpx;
+    font-size: 14px;
+}
+
+.class_group {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between;
+    color: #fff;
+    font-size: 12px;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 270rpx;
+    position: fixed;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+}
+
+.group_iterms {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    width: 20%;
+    align-items: center;
+}
+
+.img_show {
+    height: 50rpx;
+    width: 50rpx;
+}
+
+.icon_txt {
+    margin: 14rpx 0 40rpx;
+    text-align: center;
+}
+
+.group_iterms.active .icon_txt {
+    color: #ea6f5a;
+}
+
+.canvas {
+    margin: 80rpx auto;
+    width: 220px;
+    height: 220px;
+}
+
+.btnItemView {
+    width: 20%;
+    margin-bottom: 30rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zwm_img {
+    width: 64rpx;
+    height: 64rpx;
+}
+
+.btnView text {
+    margin-top: 5rpx;
+    margin-bottom: 5rpx;
+    font-size: 12px;
+}
+
+.tipText {
+    width: 90%;
+    font-size: 13px;
+    color: darkgray;
+    text-align: center;
+}
+
+.ywt_txtwrap {
+    padding: 0 48rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ywt_txtt {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.ywt_txtimg {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.ewt_tip {
+    border-top: 1px solid #F1F2F3;
+}

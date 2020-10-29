@@ -1,0 +1,3 @@
+.container .guidimg {
+    width: 100%;
+}

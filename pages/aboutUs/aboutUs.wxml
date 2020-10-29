@@ -1,0 +1,19 @@
+<view class="wrap_container">
+    <view class="log_container">
+        <image class="logo_img" src="/images/logo.jpg"></image>
+    </view>
+    <view>
+        <view class="about_texcon">
+            <text>版本号</text>
+            <text>V1.0.0</text>
+        </view>
+        <view class="about_texcon">
+            <text>更新时间</text>
+            <text>2020-04-13</text>
+        </view>
+        <view class="about_texcon">
+            <text>联系邮箱</text>
+            <text>info@envitec-k.com</text>
+        </view>
+    </view>
+</view>

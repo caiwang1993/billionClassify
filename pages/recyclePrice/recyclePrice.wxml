@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="out_wrap">
+        <view class="{{nothing}}">
+            <image class="img_nothing" src="/images/img_noOrder.png"></image>
+            <view class="text_nothing">{{textErrmsg}}</view>
+        </view>
+        <view class="left_wrap">
+            <view class="recycle_list" wx:for="{{tagList}}" wx:key="key">
+                <image class="recycle_img" src="{{item.pic}}"></image>
+                <text class="recycle_txt">{{item.name}}</text>
+                <view class="unit_price">{{item.unitPrice}}</view>
+            </view>
+        </view>
+    </view>
+</view>

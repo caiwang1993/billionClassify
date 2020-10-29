@@ -1,0 +1,29 @@
+.wrap_container {
+    padding: 40rpx;
+}
+
+.log_container {
+    height: 400rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_img {
+    width: 236rpx;
+    height: 96rpx;
+}
+
+.about_texcon {
+    border-bottom: 1px solid #eee;
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    font-size: 14px;
+}

@@ -1,0 +1,7 @@
+<view class="toast_content_box" wx:if="{{isShow}}">
+    <view class="toast_content">
+        <view class="toast_content_text">
+        {{showContent}}
+      </view>
+    </view>
+</view>

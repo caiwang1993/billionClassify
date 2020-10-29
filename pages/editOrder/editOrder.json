@@ -1,0 +1,11 @@
+{
+    "backgroundColor": "##F4F5F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "预约上门",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "toast": "/components/toast/toast",
+        "verifycode": "/components/verifycode"
+    }
+}

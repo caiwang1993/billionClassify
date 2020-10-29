@@ -1,0 +1,116 @@
+view,text {
+    box-sizing: border-box;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.arrows_after::after {
+    content: ">";
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10rpx;
+}
+
+.iterm_num {
+    font-size: 20px;
+    text-align: center;
+}
+
+.delivery_nub::after {
+    content: "次";
+    display: inline-block;
+    font-size: 15px;
+    color: #121212;
+    margin-left: 10rpx;
+}
+
+.com_txt {
+    color: #a09e9e;
+    font-size: 14px;
+}
+
+.add_cashnum {
+    color: #78C9CC;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.minus_cashnum {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.poll_cashnum {
+    color: #FB8E4E;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button::after {
+    border: none;
+}
+
+.img_nothing {
+    height: 184rpx;
+    width: 168rpx;
+}
+
+.text_nothing {
+    color: #AAAAAA;
+    margin-top: 32rpx;
+    font-size: 14px;
+}
+
+.nothing {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -200rpx;
+    text-align: center;
+}
+
+.displayblock {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -50%;
+    text-align: center;
+}
+
+.goTop {
+    height: 80rpx;
+    width: 80rpx;
+    position: fixed;
+    bottom: 50rpx;
+    right: 30rpx;
+}
+
+.moredata {
+    font-size: 16px;
+    color: #999;
+    text-align: center;
+    background-color: rgba(0,0,0,.1);
+}

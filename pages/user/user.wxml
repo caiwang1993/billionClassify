@@ -1,0 +1,38 @@
+<view class="container">
+    <view class="user_top">
+        <view class="head_photo">
+            <view class="user_img userinfo-avatar">
+                <open-data type="userAvatarUrl"></open-data>
+            </view>
+        </view>
+        <view class="nickname">
+            <text class="userinfo-nickname">{{nickName}}</text>
+        </view>
+        <view bindtap="goMessage">
+            <image src="/images/comments.png" style="vertical-align: middle;width:28px; height: 28px;"></image>
+        </view>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+        <view bindtap="goMyaddress" class="weui-cell weui-cell_access" hoverClass="weui-cell_active">
+            <view class="weui-cell__hd">
+                <image class="ewt_myicon" src="/images/icon_myaddress.png"></image>
+            </view>
+            <view class="weui-cell__bd">我的地址</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+        <view bindtap="goAboutUs" class="weui-cell weui-cell_access" hoverClass="weui-cell_active">
+            <view class="weui-cell__hd">
+                <image class="ewt_myicon" src="/images/my_icon_gywm@2x.png" style="width:32rpx;height:32rpx;"></image>
+            </view>
+            <view class="weui-cell__bd">关于我们</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+        <view bindtap="goSettings" class="weui-cell weui-cell_access" hoverClass="weui-cell_active">
+            <view class="weui-cell__hd">
+                <image class="ewt_myicon" src="/images/icon_setting.png" style="width:32rpx;height:32rpx;"></image>
+            </view>
+            <view class="weui-cell__bd">设置</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+    </view>
+</view>

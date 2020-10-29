@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/scanCode/scanCode",
+    "pages/wallet/wallet",
+    "pages/putCode/putCode",
+    "pages/deliveryRecord/deliveryRecord",
+    "pages/login/login",
+    "pages/amountDetail/amountDetail",
+    "pages/nearbyEquipment/nearbyEquipment",
+    "pages/appointeToDoor/appointeToDoor",
+    "pages/myOrders/myOrders",
+    "pages/editOrder/editOrder",
+    "pages/myaddress/myaddress",
+    "pages/newEditAddress/newEditAddress",
+    "pages/myCourse/myCourse",
+    "pages/settings/settings",
+    "pages/message/message",
+    "pages/messageDetail/messageDetail",
+    "pages/accountView/accountView",
+    "pages/bindingHome/bindingHome",
+    "pages/deliveryGuide/deliveryGuide",
+    "pages/recyclePrice/recyclePrice",
+    "pages/aboutUs/aboutUs"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "亿分类",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#121212",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon_home_default@2x.png",
+        "selectedIconPath": "images/tabbar_index_selected.png"
+      },
+      {
+        "pagePath": "pages/putCode/putCode",
+        "text": "我的二维码",
+        "iconPath": "images/tabbar_ewm_normal.png",
+        "selectedIconPath": "images/tabbar_ewm_selected.png"
+      },
+      {
+        "pagePath": "pages/myOrders/myOrders",
+        "text": "我的订单",
+        "iconPath": "images/icon_djyy_default@2x.png",
+        "selectedIconPath": "images/icon_djyy_selected@2x.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "images/tabbar_user_normal.png",
+        "selectedIconPath": "images/tabbar_user_selected.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+    "desc": "你的位置信息将用于小程序位置接口的效果展示"
+  }
+},
+  "sitemapLocation": "sitemap.json"
+}

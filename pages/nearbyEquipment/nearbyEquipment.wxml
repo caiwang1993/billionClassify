@@ -1,0 +1,3 @@
+<view class="container">
+    <map bindcontroltap="controltap" bindmarkertap="markertap" bindregionchange="regionchange" circles="{{circles}}" controls="{{controls}}" id="map" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" polyline="{{polyline}}" scale="{{scale}}" showLocation="true" style="width: 100%; height: {{view.Height}}px;" subkey="3YMBZ-5R5LJ-PGQFL-K3GIJ-KY3W3-LFBXW"></map>
+</view>

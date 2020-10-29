@@ -1,0 +1,11 @@
+{
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "亿分类",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "toast": "/components/toast/toast",
+        "verifycode": "/components/verifycode"
+    }
+}

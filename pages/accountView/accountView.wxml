@@ -1,0 +1,67 @@
+<view class="container" id="top-main">
+    <view class="account-hd">
+        <view class="score-current">
+            <view class="score">{{customerCountScore}}</view>
+            <text class="score-tips">账户余额</text>
+        </view>
+        <view class="score-sub">
+            <view class="score-in">
+                <view class="score score-min">{{positiveScore}}</view>
+                <view class="score-tips score-tips-min">账户累计收益</view>
+            </view>
+            <view class="score-out">
+                <view class="score score-min">{{negativeScore}}</view>
+                <view class="score-tips score-tips-min">账户累计支出</view>
+            </view>
+        </view>
+        <view bindtap="gotoWallet" class="cash" wx:if="{{busModel==='1'}}">提现</view>
+    </view>
+    <view class="account-bd">
+        <view class="filter-bar">
+            <view bindtap="filterItemTap" class="filter-item" data-index="{{index}}" wx:for="{{filterData}}" wx:key="index">
+                <view class="filter-item__name">{{item.name}}</view>
+                <view class="filter-item__icon {{item.state}}"></view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="filter-bd" style="top:{{filterBdTop}}px;">
+    <scroll-view scrollY class="filter-bd-sv" style="height: {{filterbdHeight}}px;">
+        <view bindtap="selectedItem" class="item-wrap" data-index="{{index}}" data-key="{{filterbdData.key}}" wx:for="{{filterbdData.data}}" wx:key="index">
+            <view class="item-name {{item.selected?'selected':''}}">
+            {{filterbdData.key==='idVOList'?item.title:item.nick}}
+          </view>
+            <view class="item-selected" wx:if="{{item.selected}}">
+                <icon color="#78C9CC" size="16" type="success_no_circle"></icon>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<scroll-view scrollY bindscroll="scrollHandler" bindscrolltolower="scrolltolowerHandler" class="scroll-view-wrap" id="sv" lowerThreshold="5" scrollTop="{{scrolltop}}" style=" position: absolute;top:{{filterBdTop}}px;left:0;right:0;height: {{contentHeight}}px; background-color: #eee;">
+    <view class="no-data" wx:if="{{subDataList.noData}}">
+        <image mode="widthFix" src="../../images/img_nodata.png" style="width:128px;"></image>
+        <view>没有相关数据</view>
+    </view>
+    <view class="subdata-wrap" wx:else>
+        <view class="item-subdata" wx:for="{{subDataList.data}}" wx:key="index">
+            <view class="item-subdata-thumb">
+                <image mode="aspectFill" src="{{item.iconPath}}" style="width:24px;height:24px;"></image>
+            </view>
+            <view class="item-subdata-wrap">
+                <view class="item-subdata-content">
+                    <view class="item-subdata-title">
+                        <view class="item-subdata-title-txt">{{item.title}}</view>
+                    </view>
+                    <view class="item-subdata-score">{{item.getScore}}积分</view>
+                </view>
+                <view class="item-subdata-desc">
+                    <view class="item-subdata-time">{{item.date}}</view>
+                    <view class="item-subdata-name">{{item.name}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+<view bindtap="checkFilter" class="loading-wrapper {{showTips?'active':''}}">
+    <view class="loading-main"></view>
+</view>

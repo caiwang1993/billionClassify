@@ -1,0 +1,49 @@
+@import "../nearbyEquipment/nearbyEquipment.wxss";
+
+.out_wrap {
+    padding: 36rpx 49rpx;
+}
+
+.left_wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-start;
+}
+
+.recycle_list {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38rpx;
+}
+
+.recycle_img {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.recycle_txt {
+    color: #261300;
+    font-size: 14px;
+    margin-top: 10rpx;
+}
+
+.unit_price {
+    color: #675F58;
+    font-size: 12px;
+    margin-top: 6rpx;
+}
+
+.displayblock {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -50%;
+    text-align: center;
+}

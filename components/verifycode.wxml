@@ -1,0 +1,14 @@
+<view class="wx-verify-bg" hidden="{{!isShow}}">
+  <input adjustPosition="true" bindinput="listenKeyInput" class="key-input" confirmType="done" focus="{{isFocus}}" type="number" value="{{inputValue}}"></input>
+    <view class="wx-mask"></view>
+    <view class="verify-view">
+        <image catchtap="closeView" class="icon" mode="aspectFill" src="{{src}}"></image>
+        <text class="verify-title">{{title}}</text>
+        <text class="verify-content">{{content}}{{phone}}</text>
+        <view catchtap="openKeyboard" class="verify-code-view">
+            <view class="verify-input-view {{index==0?'verify-input-view-first':''}}" wx:for="{{codes}}" wx:for-item="code" wx:key="codeKey">
+                <text class="verify-text">{{code}}</text>
+            </view>
+        </view>
+    </view>
+</view>

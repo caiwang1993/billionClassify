@@ -1,0 +1,9 @@
+<view class="container">
+    <view class="weui-cells weui-cells_after-title"></view>
+    <view class="weui-cells">
+        <view bindtap="logout" class="weui-cell weui-cell_access" hoverClass="weui-cell_active">
+            <view class="weui-cell__bd">退出登录</view>
+            <view class="weui-cell__ft"></view>
+        </view>
+    </view>
+</view>

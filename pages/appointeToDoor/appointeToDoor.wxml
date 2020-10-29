@@ -1,0 +1,75 @@
+<view class="outer" style="width: 100%; height: {{view.Height}}px;overflow:hidden">
+    <view>
+        <view class="order_tit clearfix">
+            <view class="tit_txt">
+                <text>进行中的订单</text>
+            </view>
+            <view bindtap="show" class="order_tips">
+                <image class="img_question" src="/images/tips.png"></image>
+                <text>订单说明</text>
+            </view>
+        </view>
+    </view>
+    <view class="{{main_order}}">
+        <view class="{{nothing}}">
+            <image class="img_nothing" src="/images/img_noOrder.png"></image>
+            <view class="text_nothing">暂无订单记录~~</view>
+        </view>
+        <block wx:for="{{orderList}}" wx:key="id">
+            <view class="{{order_inner}}">
+                <view class="inner_tit margin_b">
+                    <view class="tit_text">{{item.res_name}}</view>
+                    <view bindtap="cancleOrder" class="btn_cancle" data-orderid="{{item.id}}">取消订单</view>
+                    <view class="tit_status">{{item.orderStateName}}</view>
+                </view>
+                <view class="inner_detail padding-b">
+                    <view class="det_list">
+                        <text class="list_tit">上门时间:</text>
+                        <text>{{item.goTime||'空'}}</text>
+                    </view>
+                    <view class="det_list">
+                        <text class="list_tit">联系方式:</text>
+                        <text class="list_tit">{{item.nick}}</text>
+                        <text class="phone_num">{{item.mobile}}</text>
+                    </view>
+                    <view class="det_list">
+                        <text class="list_tit">预约信息:</text>
+                        <text>{{item.remark}}</text>
+                    </view>
+                    <view class="img_box">
+                        <image bindtap="listenerButtonPreviewImage" class="img_orderdtl" data-url="{{image}}" mode="aspectFill" src="{{image}}" wx:for="{{item.imgList}}" wx:for-item="image" wx:key="*this"></image>
+                    </view>
+                    <view class="appointe_time">
+                        <text class="list_tit">创建时间:</text>
+                        <text>{{item.create_time||'空'}}</text>
+                    </view>
+                </view>
+            </view>
+            <view></view>
+        </block>
+    </view>
+    <button bindtap="markOrder" class="btn_active" disabled="{{disabled}}" hoverClass="other-button-hover" size="{{defaultSize}}" style="{{status_css}}">预约上门</button>
+    <view class="zhezao" hidden="{{flag}}">
+        <view class="t_w">
+            <view bindtap="conceal" class="t_image">
+                <image class="t_image1" src="/images/icon_close.png"></image>
+            </view>
+            <view class="tanchu_view">
+                <view>
+                    <view class="bg_view">订单说明</view>
+                    <view class="txtys">
+                        <view>1、您可在回收员上门前取消预约。</view>
+                        <view>2、上门前回收员将会与您联系并确认上门时间，请您根据实际情况合理安排。</view>
+                        <view>3、预约后24H内无回收员接单，系统将自动取消您的预约，可更换时间再次预约。</view>
+                        <view>4、回收员确认回收后，您可立即获取相应的积分或现金。</view>
+                    </view>
+                    <view class="txtsure">
+                        <view bindtap="conceal" class="txtsurebg">
+                            <text class="txtsurename">确认</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

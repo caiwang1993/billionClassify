@@ -1,0 +1,8 @@
+{
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "新增/编辑地址",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {}
+}

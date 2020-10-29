@@ -1,0 +1,60 @@
+<form bindsubmit="formSubmit" class="{{isShow}}">
+    <view class="xg-main">
+        <view class="recycle-container">
+            <view class="wdf_recycle">
+                <view class="recycle_iterm">
+                    <view class="recycle_li">
+                        <text class="recycle_tit">联系人：</text>
+                        <input class="recycle_input dis_edit" disabled="disabled" name="nick" placeholder="联系人姓名" type="text" value="{{nick}}"></input>
+                    </view>
+                    <view class="recycle_li">
+                        <text class="star_mast">*</text>
+                        <text class="recycle_tit">手机号：</text>
+                        <input class="recycle_input" maxlength="11" name="mobile" type="number" value="{{mobile}}"></input>
+                        <input hidden="hidden" name="unit_id" type="number" value="{{unit_id}}"></input>
+                    </view>
+                    <view class="recycle_li">
+                        <text class="recycle_tit">省市区：</text>
+                        <input class="recycle_input dis_edit" disabled="disabled" name="provinceCityName" placeholder="省市区" type="text" value="{{provinceCityName}}"></input>
+                    </view>
+                    <view class="recycle_li" style="height:auto;">
+                        <text class="recycle_tit">详细地址：</text>
+                        <textarea class="address_textarea" cols="" disabled="disabled" maxlength="40" name="address" placeholder="{{address}}" rows="" type="text" value="{{address}}"></textarea>
+                    </view>
+                    <view class="recycle_li">
+                        <text class="star_mast">*</text>
+                        <text class="recycle_tit">物品名称：</text>
+                        <input class="recycle_input" name="res_name" placeholder="请输入物品名称" type="text"></input>
+                    </view>
+                    <view class="recycle_li">
+                        <text class="recycle_tit">备注：</text>
+                    </view>
+                    <view class="wdf_remark">
+                        <textarea class="wdf_note js_note" cols="30" maxlength="120" name="remark" placeholder="输入字符不得超过120字" rows="10"></textarea>
+                    </view>
+                    <textarea hidden maxlength="{{-1}}" name="imagesSrc" value="{{imagesSrc}}"></textarea>
+                </view>
+            </view>
+            <view class="wdf_aupload">
+                <view class="recycle_li upload_tit">
+                    <text class="star_mast">*</text>
+                    <text class="recycle_tit">照片上传</text>
+                    <text class="span_tips">1-4张物品照片</text>
+                </view>
+                <view class="up_loadimg">
+                    <view class="upload-ul xg_uploadul">
+                        <view class="upload-pick">
+                            <image bindtap="uploadImg" class="webuploader-container" id="goodsUpload" src="/images/icon_tianjia@3x.png"></image>
+                            <image bindtap="listenerButtonPreviewImage" class="item_photos" data-index="{{index}}" src="{{item}}" wx:for="{{tempFilePaths}}" wx:key="{{index}}"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="wdf_foot">
+            <button class="wdf-btn-submit" disabled="{{flag}}" formType="submit">
+                <text class="submit_nomal">提交预约</text>
+            </button>
+        </view>
+    </view>
+</form>

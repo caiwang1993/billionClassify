@@ -1,0 +1,20 @@
+<view class="address_con" style="height: {{view.Height}}px;">
+    <view class="{{nothing}}">
+        <image class="img_nothing" src="/images/noAddress.png"></image>
+        <view class="text_nothing" style="color:#AAAAAA;font-size:14px;">您还没有地址，可以点击底部按钮新建地址</view>
+    </view>
+    <view class="{{adressitem}}">
+        <view class="info">
+            <text class="info_address">地址：{{address}}</text>
+            <text class="info_user">{{nick}}，{{mobile}}</text>
+        </view>
+        <view bindtap="toModifyAddre" class="modify">
+            <image class="icon_modify" mode="widthFix" src="/images/icon_edite.png"></image>
+        </view>
+    </view>
+    <view bindtap="addAddre" class="add_view" wx:if="{{!hasAddress}}">
+        <image class="add_icon" mode="widthFix" src="/images/icon_jia.png"></image>
+        <view class="add_text">新增个人地址</view>
+        <image class="add_editads" mode="widthFix" src="/images/icon_more.png"></image>
+    </view>
+</view>

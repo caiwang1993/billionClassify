@@ -1,0 +1,47 @@
+<form bindreset="addressReset" bindsubmit="neweditaddressSubmit" class="editform">
+    <view class="xg-main">
+        <view class="recycle-container">
+            <view class="wdf_recycle">
+                <view class="recycle_iterm">
+                    <view class="recycle_li">
+                        <text class="recycle_tit">联系人姓名：</text>
+                        <input class="recycle_input" name="nick" placeholder="联系人姓名" type="text" value="{{nick}}"></input>
+                    </view>
+                    <view class="recycle_li">
+                        <text class="star_mast">*</text>
+                        <text class="recycle_tit">手机号：</text>
+                        <input class="recycle_input mobile" maxlength="11" name="mobile" placeholder="联系人电话" type="number" value="{{mobile}}"></input>
+                    </view>
+                    <view class="recycle_li">
+                        <text class="star_mast">*</text>
+                        <text class="recycle_tit">所在省市区：</text>
+                        <picker bindchange="bindRegionChange" class="{{adsPicker}}" customItem="{{customItem}}" hidden="{{hidePicker}}" mode="region" name="address_picker" value="{{region}}">
+                            <view class="picker">
+                       {{region}}
+                      </view>
+                        </picker>
+                        <view class="{{provinces}}">
+                            <input class="adr_input" disabled="disabled" maxlength="60" name="Provinces" placeholder="省市区" type="text" value="{{Provinces}}">{{Provinces}}</input>
+                        </view>
+                    </view>
+                    <view class="recycle_li">
+                        <text class="recycle_tit">详细地址：</text>
+                    </view>
+                    <view class="recycle_li bordertop_none">
+                        <text class="red_star">*</text>
+                        <input class="address_input" disabled="{{villageable}}" maxlength="60" name="village" placeholder="xx小区，必填项" type="text" value="{{village}}"></input>
+                        <text class="recycle_tit">小区</text>
+                    </view>
+                    <view class="recycle_li bordertop_none">
+                        <input class="address_input" maxlength="60" name="unit" placeholder="楼号、单元室" type="text" value="{{unit}}"></input>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="wdf_foot">
+            <button class="wdf-btn-submit" disabled="{{btnDisabled}}" formType="submit">
+                <text class="submit_nomal">保存</text>
+            </button>
+        </view>
+    </view>
+</form>

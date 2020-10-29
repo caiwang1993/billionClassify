@@ -1,0 +1,8 @@
+{
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我的投放码",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {}
+}

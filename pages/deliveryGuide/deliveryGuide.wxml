@@ -1,0 +1,3 @@
+<view class="container">
+    <image class="guidimg" mode="widthFix" src="{{item.path}}" wx:for="{{guidPath}}"></image>
+</view>

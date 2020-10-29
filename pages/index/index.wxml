@@ -1,0 +1,82 @@
+<view class="">
+    <swiper autoplay="{{autoplay}}" class="dls_swiper" duration="{{duration}}" indicatorDots="{{indicatorDots}}" interval="{{interval}}">
+        <swiper-item wx:for="{{imgUrls}}" wx:key="*this">
+            <image class="slide-image" height="100" src="{{item}}" width="355"></image>
+        </swiper-item>
+    </swiper>
+    <view class="dls_operate">
+        <navigator class="iterm_operate" hoverClass="navigator-hover" url="/pages/editOrder/editOrder">
+            <view class="icon_view">
+                <view class="img_bgc bgc_b">
+                    <image class="icon-image" height="50" src="/images/home_icon_djyy@2x.png" width="50"></image>
+                </view>
+            </view>
+            <view class="opera_txt">大件预约</view>
+        </navigator>
+        <navigator class="iterm_operate" hoverClass="navigator-hover" url="/pages/recyclePrice/recyclePrice">
+            <view class="icon_view">
+                <view class="img_bgc">
+                    <image class="icon-image" height="50" src="/images/icon_order.png" width="50"></image>
+                </view>
+            </view>
+            <view class="opera_txt">回收价格</view>
+        </navigator>
+        <navigator bindtap="deliveryGuideHandler" class="iterm_operate" url="/pages/deliveryGuide/deliveryGuide">
+            <view class="icon_view">
+                <view class="img_bgc">
+                    <image class="icon-image" height="50" src="/images/home_icon_tdzn@2x.png" width="50"></image>
+                </view>
+            </view>
+            <view class="opera_txt">投递指南</view>
+        </navigator>
+        <view bindtap="scanCodeHandler" class="iterm_operate">
+            <view class="icon_view">
+                <view class="img_bgc">
+                    <image class="icon-image" height="50" src="/images/icon_erwei.png" width="50"></image>
+                </view>
+            </view>
+            <view class="opera_txt">扫一扫</view>
+        </view>
+    </view>
+    <view class="partthree">
+        <view class="list_group">
+            <view class="items_list">
+                <view bindtap="gotoWallet" class="arrows">
+                    <text>我的积分</text>
+                    <image class="img_arrows" src="/images/home_icon_into@2x.png"></image>
+                </view>
+                <view class="iterm_num cash_num">{{iterm_num}}</view>
+            </view>
+            <view class="before_box"></view>
+            <view class="items_list">
+                <view bindtap="gotoDelivery" class="arrows">
+                    <text>累计投递</text>
+                    <image class="img_arrows" src="/images/home_icon_into@2x.png"></image>
+                </view>
+                <view class="iterm_num delivery_nub">{{delivery_nub}}</view>
+            </view>
+        </view>
+        <view class="list_group bgimg">
+            <image class="layout" src="/images/home_png_dtbg@2x.png"></image>
+            <view class="nearby_wrap">
+                <view class="nearby_item">
+                    <view bindtap="gotoNearby" class="arrows">
+                        <text>附近回收机</text>
+                        <image class="img_arrows" src="/images/home_icon_into@2x.png"></image>
+                    </view>
+                </view>
+                <view class="nearby_item nearby_itemt">
+                    <view class="nearby_items">
+                        <image class="dls_bicon" src="/images/home_icon_dizhi@2x.png"></image>
+                        <text class="dls_btext">附近共有{{recycleNumber}}台回收机</text>
+                    </view>
+                    <view bindtap="gotoNearby" class="nearby_items dls_bgimg">去查看</view>
+                </view>
+                <view class="nearby_item3">
+                    <image class="dls_sicon" src="/images/home_icon_tishi@2x.png"></image>
+                    <text class="dls_stext">点击去查看，查看附近3公里的设备</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

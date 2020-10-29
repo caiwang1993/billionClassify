@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="xg-main bgc_green">
+        <view class="xg-container codr_container">
+            <view class="erwei_container" id="erwei_container">
+                <view class="ywt_txtwrap">
+                    <text class="ywt_txtt">{{nickName}}</text>
+                    <image class="ywt_txtimg" src="/images/my_icon_toux@2x.png"></image>
+                </view>
+                <view class="ewt_tip" style="font-size:16px;color:#333333;text-align:center;margin-top:50rpx;">扫描下方的二维码开始投递</view>
+                <image alt="投放二维码" class="img_erwei" mode="widthFix" src="{{imgUrl}}"></image>
+            </view>
+        </view>
+    </view>
+</view>

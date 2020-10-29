@@ -1,0 +1,12 @@
+<view class="container">
+    <view class="register">
+        <view class="logo_div">
+            <image class="img_logo" src="/images/logo.png"></image>
+        </view>
+        <form id="userRegForm">
+            <view class="wx_login">
+                <button bindgetphonenumber="getPhoneNumber" class="am-btn wx_btn icon_wx wx_btn_primary" hoverClass="btn-hover" openType="getPhoneNumber" type="button">微信快捷登录</button>
+            </view>
+        </form>
+    </view>
+</view>

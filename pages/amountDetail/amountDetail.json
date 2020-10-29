@@ -1,0 +1,8 @@
+{
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#78C9CC",
+    "navigationBarTitleText": "微信提现明细",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {}
+}
